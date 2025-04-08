@@ -1,4 +1,4 @@
-import { Theme } from '@types'
+import { Theme } from '@/types'
 import { createGlobalStyle } from 'styled-components'
 //import { DefaultTheme } from 'styled-components'
 
