@@ -3,7 +3,7 @@ import { InputProps } from '@/types'
 import { pxToRem } from '@/utils'
 export const StyledInput = styled.input<InputProps>`
   background-color: ${(props) => props.theme.textInput.active};
-  color: ${(props) => props.theme.buttons.activeColor};
+  color: ${(props) => props.theme.textInput.activeColor};
   border-radius: ${pxToRem(8)};
   border: ${pxToRem(1)} solid ${(props) => props.theme.textInput.borderColor};
   box-sizing: border-box;
