@@ -8,7 +8,7 @@ export interface Theme {
   buttons: {
     alert: string
     alertColor: string
-    alertHouver: string
+    alertHover: string
     disabled: string
     disabledColor: string
     primary: string
