@@ -1,6 +1,7 @@
 //import { Theme } from '@/types'
 import { createGlobalStyle } from 'styled-components'
 import { DefaultTheme } from 'styled-components'
+import { pxToRem } from '@/utils'
 
 export const GlobalStyle = createGlobalStyle<{ theme?: DefaultTheme }>`
     body, html {
@@ -14,4 +15,10 @@ export const GlobalStyle = createGlobalStyle<{ theme?: DefaultTheme }>`
         margin: 0;
         padding: 0;
     } 
+    .mb-1 {
+        margin-bottom: ${pxToRem(16)};
+    }
+    .mb-2 {
+        margin-bottom: ${pxToRem(32)};
+    }
 `
