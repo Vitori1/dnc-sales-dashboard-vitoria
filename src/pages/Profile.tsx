@@ -49,7 +49,7 @@ function Profile() {
     error: profileUpdateError,
   } = usePut<ProfileEditableData>('profile/update')
   const { deleteData: profileDeleteData, loading: profileDeleteLoading } =
-    useDelete('profile/update')
+    useDelete('profile/delete')
   useEffect(() => {
     if (profileData) {
       handleChange(0, profileData.name)
