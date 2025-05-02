@@ -18,7 +18,7 @@ import { jwtExpirationDateConverter, pxToRem } from '@/utils'
 //types
 import { DecodedJWT, MessageProps, LoginData, LoginPostData } from '@/types'
 //redux
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { RootState } from '@/redux/slices/index'
 function Login() {
   const navigate = useNavigate()
