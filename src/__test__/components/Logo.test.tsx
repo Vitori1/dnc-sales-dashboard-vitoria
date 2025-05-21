@@ -11,7 +11,7 @@ describe('Logo', () => {
   const renderComponent = (theme: Theme, width?: number, height?: number) =>
     render(
       <ThemeProvider theme={theme}>
-        <Logo height={height ?? 32} width={32} />
+        <Logo height={height ?? 32} width={width ?? 32} />
       </ThemeProvider>
     )
   themesList.forEach(({ name, theme }) => {
