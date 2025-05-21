@@ -53,6 +53,7 @@ function Home() {
             <>
               <Grid>
                 <CardComponent
+                  id="total-sales"
                   className={
                     highlightsLoading
                       ? 'skeleton-loading skeleton-loading-mh-1'
@@ -74,6 +75,7 @@ function Home() {
               </Grid>
               <Grid>
                 <CardComponent
+                  id="month-goals"
                   className={
                     highlightsData
                       ? highlightsData[1].subtitle
@@ -102,6 +104,7 @@ function Home() {
               </Grid>
               <Grid>
                 <CardComponent
+                  id="total-leads"
                   className={
                     highlightsLoading
                       ? 'skeleton-loading skeleton-loading-mh-1'
@@ -125,6 +128,7 @@ function Home() {
           <Grid>
             {!salesMonthError && (
               <CardComponent
+                id="month-sales-chart"
                 className={
                   salesMonthLoading
                     ? 'skeleton-loading skeleton-loading-mh-2'
@@ -147,6 +151,7 @@ function Home() {
           <Grid>
             {!salesStarsError && (
               <CardComponent
+                id="sales-stars"
                 className={
                   salesStarsLoading
                     ? 'skeleton-loading skeleton-loading-mh-2'
@@ -173,6 +178,7 @@ function Home() {
           <Grid>
             {!newsError && (
               <CardComponent
+                id="news"
                 className={
                   newsLoading ? 'skeleton-loading skeleton-loading-mh-2' : ''
                 }
@@ -203,6 +209,7 @@ function Home() {
           <Grid>
             {!salesYearError && (
               <CardComponent
+                id="year-sales-chart"
                 className={
                   salesYearLoading
                     ? 'skeleton-loading skeleton-loading-mh-2'
